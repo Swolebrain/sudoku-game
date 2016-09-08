@@ -1,5 +1,5 @@
 var URL = 'http://fvi-grad.com:4004/sudoku';
-
+console.log($("td"));
 function handleResize(){
   var w = $("td").width();
   $("td").css("height", w+"px");
@@ -29,7 +29,7 @@ $.ajax({
 
 function getData(){
   var cells = document.querySelectorAll("td");
-  var result = Array(9).fill(Array(9));
+  var result = new Array(9).fill(0).map(e => new Array(9).fill(0));
   for (var i = 0; i < cells.length; i++){
     if ( cells[i].innerHTML.length > 1 ){
       result[parseInt(i/9)][i%9] = cells[i].children[0].value;

@@ -10,17 +10,18 @@ table, tbody{
   margin: 0 auto;
 }
 tbody{
-  border: 2px solid black;
+  border: 2px solid white;
 }
 h1{
   color:white;
 }
 td{
-  border: 1px solid black;
+  border: 1px solid white;
   text-align: center;
   width: 11.111111%;
   font-size: 3rem;
   color:white;
+  background-color: rgba(0,0,0,0.55);
 }
 
 input[type='text']{
@@ -36,9 +37,9 @@ input[type='text']{
 }
 
 td:nth-child(0), td:nth-child(4), td:nth-child(7){
-  border-left: 2px solid black;
+  border-left: 3px solid white;
 }
 
 tr:nth-child(0), tr:nth-child(4), tr:nth-child(7){
-  border-top: 2px solid black;
+  border-top: 3px solid white;
 }
